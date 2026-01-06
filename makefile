@@ -12,7 +12,7 @@ WARN=-Wall
 
 PTHREAD=-pthread
 
-CCFLAGS=$(DEBUG) $(OPT) $(WARN) $(PTHREAD) -pipe -std=gnu17
+CCFLAGS=$(DEBUG) $(OPT) $(WARN) $(PTHREAD) -pipe
 
 GTKLIB=`pkg-config --cflags --libs gtk+-3.0`
 GIOLIB=`pkg-config --cflags --libs glib-2.0`
