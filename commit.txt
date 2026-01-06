@@ -1,5 +1,9 @@
-Hacky fix for GCC15+ compilation 
+Fix compilation with gcc 15+
 
 
-`src/active.c:759:9: error: too many arguments to function 'set_limits_from_pp_table'; expected 0, have 1`
-A gcc update probably "broke" it (stopped ignoring the error), or changed the behaviour of `()`
+`\`\`
+src/active.c:759:9: error: too many arguments to function 'set_limits_from_pp_table'; expected 0, have 1
+`\`\`
+
+
+This seems to have been a copy paste mistake since the function does not use `app_wdgts`
